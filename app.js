@@ -1,47 +1,50 @@
-// data types
-// String
-let name = 'Kaspar Pedaja'
-console.log(name)
-console.log(typeof name)
+let val
 
-let goodMark = 5
-console.log(goodMark)
-console.log(typeof goodMark)
-
-let percent = 80.2
-console.log(percent)
-console.log(typeof percent)
-
-let isHere = true // false
-console.log(isHere)
-console.log(typeof isHere)
+// number -> String
+val = String(567)
+val = String(4+4)
+val = String(5.6)
 
 
-// arrays
-const numbers = [1, 2, 3, 4, 5]
-console.log(numbers)
-console.log(typeof numbers)
+// bool -> String
+val = String(true)
+val = String(false)
 
-// objects
-const person = {
-    firstname: 'Kaspar',
-    surname: 'Pedaja'
-}
-console.log(person)
-console.log(typeof person)
+// object -> String
+val = String(new Date())
 
-// Null
+// Null -> String
+val = String(null)
 
-const airplane = null
-console.log(airplane)
-console.log(typeof airplane)
+// array -> String
+val = String([1, 2, 3, 4, 5])
 
-// Symbol
-const sym = Symbol()
-console.log(sym)
-console.log(typeof sym)
+// undefined -> String
+val = String(undefined)
 
-// undefined
-let test
-console.log(test)
-console.log(typeof test)
+// toString()
+val = (true).toString()
+
+// String -> Number
+val = Number('5')
+
+// bool -> Number
+val = Number(true)
+val = Number(false)
+
+// Null -> Number
+val = Number(null)
+
+// String -> Number
+
+val = Number("Ndada")
+
+// Array -> Number
+val = Number([1, 2, 3, 4, 5])
+
+// String -> Integer
+val = parseInt(128.76)
+
+// String -> Float
+val = parseFloat(128.70)
+console.log(val)

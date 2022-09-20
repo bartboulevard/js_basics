@@ -1,17 +1,26 @@
-// variables
-// let
+// data types
+// String
 let name = 'Kaspar Pedaja'
-name = 'new name'
+console.log(name)
+console.log(typeof name)
 
-// const
-const surname = 'Pedaja'
-// surname = 'dasda' - error
+let goodMark = 5
+console.log(goodMark)
+console.log(typeof goodMark)
+
+let percent = 80.2
+console.log(percent)
+console.log(typeof percent)
+
+let isHere = true // false
+console.log(isHere)
+console.log(typeof isHere)
+
 
 // arrays
 const numbers = [1, 2, 3, 4, 5]
 console.log(numbers)
-numbers.push(6)
-console.log(numbers)
+console.log(typeof numbers)
 
 // objects
 const person = {
@@ -19,7 +28,20 @@ const person = {
     surname: 'Pedaja'
 }
 console.log(person)
-console.log(person.firstname)
-console.log(person.surname)
-person.department = 'IKT'
-console.log(person)
+console.log(typeof person)
+
+// Null
+
+const airplane = null
+console.log(airplane)
+console.log(typeof airplane)
+
+// Symbol
+const sym = Symbol()
+console.log(sym)
+console.log(typeof sym)
+
+// undefined
+let test
+console.log(test)
+console.log(typeof test)

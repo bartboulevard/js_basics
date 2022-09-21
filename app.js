@@ -1,26 +1,21 @@
 const firstname = 'Kaspar'
 const surname = 'Pedaja'
+const email = 'kaspar.pedaja@voco.ee'
+const dept = 'IKT'
 
-let val = firstname + ' ' + surname
+let result = '<ul>' +
+    '<li>Name: '+ firstname + '</li>' +
+    '<li>' + surname + '</li>' +
+    '<li>' + email + '</li>' +
+    '<li>' + dept + '</li>' +
+    '</ul>'
 
-val = 'kaspar '
-val += surname
-
-val = firstname.toUpperCase()
-val = surname.toLowerCase()
-
-val = surname[0]
-val = surname.indexOf('a')
-val = surname.lastIndexOf('a')
-
-val = surname.charAt(2)
-val = surname.charAt(surname.length - 1)
-
-val = surname.substring(0, 3)
-val = surname.slice(0, 3)
-val = surname.slice(-4)
-
-const tags = 'JS, HTML, CSS'
-val = tags.split(',')
-
-console.log(val[1].trim())
+result = `
+    <ul>
+        <li><b>Name: </b>${firstname}</li>
+        <li><b>Last name: </b>${surname}</li>
+        <li><b>E-mail: </b>${email}</li>
+        <li><b>Department: </b>${dept}</li>
+     </ul>`
+console.log(result)
+document.body.innerHTML = result

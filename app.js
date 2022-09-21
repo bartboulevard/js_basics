@@ -1,21 +1,28 @@
-const firstname = 'Kaspar'
-const surname = 'Pedaja'
-const email = 'kaspar.pedaja@voco.ee'
-const dept = 'IKT'
+const numbers1  = [46, 79, 61, 102, 84, 33]
+const numbers2 = new Array(43, 465, 421, 33, 4)
 
-let result = '<ul>' +
-    '<li>Name: '+ firstname + '</li>' +
-    '<li>' + surname + '</li>' +
-    '<li>' + email + '</li>' +
-    '<li>' + dept + '</li>' +
-    '</ul>'
+let val
 
-result = `
-    <ul>
-        <li><b>Name: </b>${firstname}</li>
-        <li><b>Last name: </b>${surname}</li>
-        <li><b>E-mail: </b>${email}</li>
-        <li><b>Department: </b>${dept}</li>
-     </ul>`
-console.log(result)
-document.body.innerHTML = result
+val = numbers1.length
+val = numbers2.length
+
+val = numbers1[3]
+val = numbers1.indexOf(61)
+val = Array.isArray(null)
+
+
+numbers1.push(88)
+numbers1.pop()
+numbers1.unshift(6553)
+numbers1.shift()
+
+
+val = numbers1.concat(numbers2)
+
+console.log(numbers1)
+val = numbers1.sort(function (x, y) {
+    return y - x
+})
+
+
+console.log(numbers1)

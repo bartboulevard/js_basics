@@ -1,22 +1,75 @@
-const today = new Date()
+/*
+if(condition) {
+    // if statements
+} else {
+    // else statements
+}
 
-let val
+== equal -> ===
+!= not equal -> !==
+ */
 
-val = today
-val = today.getMonth()
-val = today.getDate()
-val = today.getDay()
-val = today.getFullYear()
-val = today.getHours()
-val = today.getMinutes()
-val = today.getSeconds()
-val = today.getTime()
+// let personID = 34
 
-val = new Date('09/22/2021')
-val = new Date('September 23, 2022')
+// if(typeof personID !== 'undefined'){
+   // console.log("id is incorrect")
+// } else {
+   // console.log('id is ${personID}')
+// }
 
-val = new Date()
-val.setDate(23)
-val.setFullYear(2023)
 
-console.log(val)
+
+/* const color = 'red'
+
+if(color === 'red'){
+    console.log('Stop!')
+    } else if(color === 'yellow'){
+    console.log('Attention')
+} else if(color === 'green'){
+    console.log("Go")
+}   else{
+    console.log("Error")
+}
+*/
+
+/*
+conditional && condition2 - and
+conditional .. condition2 - or
+ */
+
+const name = "Juhan"
+const age = 56
+
+if(age > 0 && age <= 12){
+    console.log(`${name} on täiskasvanu`)
+} else if (age > 12 && age < 18){
+    console.log(`${name} on laps`)
+} else {
+    console.log(`${name} on täiskasvanu`)
+}
+
+let id = 5
+if(id === 100){
+    console.log("ok")
+} else{
+    console.log("no")
+}
+
+//? ternary
+console.log(id === 100 ? 'Ok' : "Not")
+// switch
+const color = "red"
+
+switch (color) {
+    case "red":
+        console.log("Stop")
+        break;
+    case "yellow":
+        console.log("Attention")
+        break;
+    case "green":
+        console.log("Go")
+        break;
+    default:
+        console.log("h")
+}

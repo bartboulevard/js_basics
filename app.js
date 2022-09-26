@@ -1,42 +1,34 @@
-/*
-function greeting(name){
-    // console.log(`Hello, ${name}`)
-    return `Hello, ${name}`
-}
+let val;
 
+val = document
+val = document.all
+val = document.all[6]
+val = document.all.length
 
-// greeting('Kaspar')
-// let greet = greeting('Kaspar')
-// console.log(greet)
+val = document.head
+val = document.body
 
-// const square = function (number){
-   // return number * number
-// }
+val = document.doctype
+val = document.domain
+val = document.URL
+val = document.characterSet
+val = document.contentType
 
-// let result = square(3)
-// console.log(result)
-*/
+val = document.forms
+val = document.forms[0]
+val = document.forms[0].method
+val = document.forms[0].action
+val = document.forms[0].id
 
-// IIFE - immediately invokable function expression
-    (function (){
-        console.log('the function is running')
-    })();
+val = document.links
+val = document.links[1]
+val = document.links[1].id
+val = document.links[1].className
+val = document.links[1].classList
+val = document.links[1].classList[2]
 
-(function (name){
-    console.log(`Hello ${name}`)
-})('Kaspar');
-
-const todo = {
-    add: function (){
-        console.log('add todo...')
-    },
-    edit: function (){
-        console.log('edit todo...')
-    },
-    delete: function (){
-        console.log('delete todo...')
-    }
-}
-todo.add()
-todo.edit()
-todo.delete()
+val = document.scripts
+val = document.scripts[0]
+val = document.scripts[1]
+val = document.scripts[1].getAttribute('src')
+console.log(val)

@@ -1,17 +1,26 @@
-const li = document.createElement('li')
-li.className = 'collection-item'
-let text = document.createTextNode('Study element creation')
-li.appendChild(text)
+const form = document.querySelector('form')
+const taskInput = document.querySelector('#task')
+const tasksHeading = document.querySelector('#task-title')
 
-const a = document.createElement('a')
-a.className = 'blue-text text-darken 2 secondary-content'
-text = document.createTextNode('X')
-a.appendChild(text)
-a.setAttribute('href', '#')
+// submit
+form.addEventListener('submit', runEvent)
 
-li.appendChild(a)
+// keyboard
+// taskInput.addEventListener('keydown', runEvent)
+// taskInput.addEventListener('keyup', runEvent)
+// taskInput.addEventListener('keypress', runEvent)
 
-const list = document.querySelector('ul')
-list.appendChild(li)
+// focus
+// taskInput.addEventListener('focus', runEvent)
+// taskInput.addEventListener('blur', runEvent)
 
-console.log(li)
+// inputs
+taskInput.addEventListener('cut', runEvent)
+taskInput.addEventListener('paste', runEvent)
+taskInput.addEventListener('input', runEvent)
+
+function runEvent(event){
+    console.log(`Event type: ${event.type}`)
+    tasksHeading.innerText = event.target.value
+    // event.preventDefault()
+}
